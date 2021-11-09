@@ -11,7 +11,7 @@ from decimal import *
 # https://pikepdf.readthedocs.io/en/latest/topics/content_streams.html
 
 # in PDF points, 1 = 1/72" or about 0.35 mm
-NEW_LINE_WEIGHT = Decimal(100)
+NEW_LINE_WEIGHT = Decimal(0.001)
 
 def convert_line_weights_in_page(page):
     instructions = list(pikepdf.parse_content_stream(page))
